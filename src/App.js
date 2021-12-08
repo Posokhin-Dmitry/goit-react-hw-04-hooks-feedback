@@ -43,7 +43,10 @@ function App() {
   return (
     <>
       <Section title="Please leave feedback">
-        <FeedbackOptions onClick={handlerFeedback} />
+        <FeedbackOptions
+          options={['Good', 'Neutral', 'Bad']}
+          onClick={handlerFeedback}
+        />
       </Section>
 
       {total < 1 ? (
